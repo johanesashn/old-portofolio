@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Johanes Alberto Siahaan</title>
+  </head>
+  <body onload="startTime()">
+    <!-- navbar -->
+    <nav data-aos="fade-in" class="fixed-top navbar navbar-expand-lg navbar-light shadow-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <h4 style="font-weight: bolder; color : white;">Johanes</h4>
+          <h5 style="font-weight: bolder; color : white;">Johanes Alberto Siahaan</h5>
+          <!-- Johanes Alberto Siahaan -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color : white">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" style="color : white">About</a>
+            </li> 
+            <li class="nav-item" >
+              <a class="nav-link" href="#skills" style="color : white">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#achievements" style="color : white">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" style="color : white">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" style="color : white">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+    
+    <button class="color-theme">
+      <div class="light">
+        Dark <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb-off-fill" viewBox="0 0 16 16">
+          <path d="M2 6c0-.572.08-1.125.23-1.65l8.558 8.559A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm10.303 4.181L3.818 1.697a6 6 0 0 1 8.484 8.484zM5 14.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5zM2.354 1.646a.5.5 0 1 0-.708.708l12 12a.5.5 0 0 0 .708-.708l-12-12z"/></svg>
+      </div>
+      <div class="dark hide">
+        Light <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+          <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+      </div>
+    </button>
+    
+    <!-- jumbotron -->
+    <div class="jumbotron">
+      <div class="clock-header">
+        <div id="clock" data-aos="fade-in"></div>
+      </div>
+      <div class="container">
+        <div class="left">
+          <div class="picture">
+            <img data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" src="img/Photo3.png" alt="" >
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="right">
+          <ul>
+            <li data-aos="fade-in" data-aos-delay="500">H </li>
+            <li data-aos="fade-in" data-aos-delay="550">I </li>
+            <li data-aos="fade-in" data-aos-delay="600"><pre class="tab"> </pre> ! </li>
+            <li data-aos="fade-in" data-aos-delay="650">! </li>
+            <li data-aos="fade-in" data-aos-delay="700">! </li>
+            <br class="hide">
+            <li data-aos="fade-in" data-aos-delay="750">I </li>
+            <li data-aos="fade-in" data-aos-delay="800">' </li>
+            <li data-aos="fade-in" data-aos-delay="850">M</li>
+            <li data-aos="fade-in" data-aos-delay="900"><pre class="tab"> </pre> J </li>
+            <li data-aos="fade-in" data-aos-delay="950">O </li>
+            <li data-aos="fade-in" data-aos-delay="1000">H </li>
+            <li data-aos="fade-in" data-aos-delay="1050">A </li>
+            <li data-aos="fade-in" data-aos-delay="1100">N </li>
+            <li data-aos="fade-in" data-aos-delay="1150">E </li>
+            <li data-aos="fade-in" data-aos-delay="1200">S </li>
+            <li data-aos="fade-in" data-aos-delay="1250" class="hide"><pre class="tab"> </pre> S </li>
+            <li data-aos="fade-in" data-aos-delay="1300" class="hide">I </li>
+            <li data-aos="fade-in" data-aos-delay="1350" class="hide">A </li>
+            <li data-aos="fade-in" data-aos-delay="1400" class="hide">H </li>
+            <li data-aos="fade-in" data-aos-delay="1450" class="hide">A </li>
+            <li data-aos="fade-in" data-aos-delay="1500" class="hide">A </li>
+            <li data-aos="fade-in" data-aos-delay="1550" class="hide">N </li>
+            <br>
+            <div class="university">
+              <h6></h6>
+              <p>GPA = 3.90 / 4.00</p>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="right-phone">
+        <span class="top"></span>
+        <br>
+        <span class="below"></span>
+        <h6></h6>
+        <p>GPA = 3.90 / 4.00</p>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <!-- akhir jumbotron -->
+    <!-- awal about -->
+
+    <section class="about">
+      <svg style="margin-top: -10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#181a1b" fill-opacity="1" d="M0,96L288,192L576,160L864,128L1152,32L1440,192L1440,0L1152,0L864,0L576,0L288,0L0,0Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#131516;"></path></svg>
+      <div id="about" class="container text-center">
+        <div class="row">
+          <div class="col">
+            <h2>About Me</h2>
+            <hr />
+          </div>
+        </div>
+        <div class="row justify-content-center fs-6">
+          <div class="col-sm-4 fill" data-aos="zoom-in" class>
+            My name is Johanes Alberto Siahaan, a computer science student at University of North Sumatera. Coding is my hobby. I'm a fast learner person and able to work in group well. My goal is to be a good programmer and useful for others. 
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+
+    <!-- awal skill -->
+    <section class="skills" id="skills">
+
+      <div class="container">
+        <h2>My Skills</h2>
+        <hr>
+        <div class="note">
+          <!-- <button onclick="seeMore()">see more</button>
+          <p class="pop">Note : <b>Understand OOP</b> about abstract class, method, constructor, inheritance, polymorphism, property, and simple decorator well.</p> -->
+          <!-- <details class="styled">
+            <summary><a href="#note">See more</a></summary>
+            <div class="content">
+              <p><b>Understand OOP</b> about abstract class, method, constructor, inheritance, polymorphism, property, and simple decorator well.</p>
+            </div>
+          </details> -->
+          <button>See more</button>
+          <div class="content none">
+            <ul>
+              <li>
+                <p><b>Understand Object Oriented Progamming</b> including abstract class, method, constructor, inheritance (private, protect, public), polymorphism, and property well.</p>
+              </li>
+              <li>
+                <p><b>Understand Document Object Model</b> including selection, manipulation, and events in Javascript.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clear"></div>
+      <div class="skills-fill">
+        <div class="row justify-content-around">
+          <div class="col-sm-3 skill-header note">
+          </div>
+          <div class="col-sm-3 skill-header">
+            <br><br><br><br>
+            <div class="card" id="1">
+              <div class="card-body">
+                <img src="img/C++.png" alt="">
+                <h6>C++</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 skill-header">
+            <div class="card" id="2">
+              <div class="card-body">
+                <img src="img/python.png" alt="">
+                <h6>Python</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 skill-header">
+            <br><br><br><br>
+            <div class="card" id="3">
+              <div class="card-body">
+                <img src="img/C.png" alt="">
+                <h6>C</h6>
+              </div>
+            </div>
+          </div> 
+          <div class="col-sm-3 skill-header"></div>         
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-sm-3 skill-header">
+            <br>
+            <div class="card" id="4">
+              <div class="card-body">
+                <img src="img/Javascript.png" alt="">
+                <h6>Javascript</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 skill-header">
+            <br><br><br><br><br>
+            <div class="card" id="5">
+              <div class="card-body">
+                <img src="img/html.svg" alt="">
+                <h6>HTML</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 skill-header">
+            <br><br><br><br><br>
+            <div class="card" id="6">
+              <div class="card-body">
+                <img src="img/CSS.webp" alt="">
+                <h6>CSS</h6>
+              </div>
+            </div>
+          </div>          
+          <div class="col-sm-3 skill-header">
+            <br>
+            <div class="card" id="7">
+              <div class="card-body">
+                <img src="img/SASS.png" alt="">
+                <h6>SASS</h6>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+      <div class="skills-fill-tab">
+        <div class="row justify-content-around">
+        <!-- <div class="col-sm-3 skill-header note">
+        </div> -->
+        <div class="col-sm-3 skill-header">
+          <br><br><br><br>
+          <div class="card" id="8">
+            <div class="card-body">
+              <img src="img/C++.png" alt="">
+              <h6>C++</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 skill-header">
+          <div class="card" id="9">
+            <div class="card-body">
+              <img src="img/python.png" alt="">
+              <h6>Python</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-around space"></div>
+      <div class="row justify-content-around">
+        <div class="col-sm-3 skill-header">
+          <br>
+          <div class="card" id="10">
+            <div class="card-body">
+              <img src="img/html.svg" alt="">
+              <h6>HTML</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 skill-header">
+          <br><br><br><br><br>
+          <div class="card" id="11">
+            <div class="card-body">
+              <img src="img/CSS.webp" alt="">
+              <h6>CSS</h6>
+            </div>
+          </div>
+        </div>          
+        <div class="col-sm-3 skill-header">
+          <br>
+          <div class="card" id="12">
+            <div class="card-body">
+              <img src="img/SASS.png" alt="">
+              <h6>SASS</h6>
+            </div>
+          </div>
+        </div>          
+      </div>
+      <div class="row justify-content-around space"></div>
+      <div class="row justify-content-around">
+        <div class="col-sm-3 skill-header">
+          <br><br><br><br>
+          <div class="card" id="13">
+            <div class="card-body">
+              <img src="img/Javascript.png" alt="">
+              <h6>Javascript</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 skill-header">
+          <br><br><br><br>
+          <div class="card" id="14">
+            <div class="card-body">
+              <img src="img/C.png" alt="">
+              <h6>C</h6>
+            </div>
+          </div>
+        </div> 
+      </div>
+      </div>
+
+      <div class="skills-fill-phone">
+        <div class="row justify-content-around">
+          <div class="col-sm-3 skill-header">
+          <div class="card" id="15">
+            <div class="card-body">
+              <img src="img/python.png" alt="">
+              <h6>Python</h6>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-sm-3 skill-header">
+            <div class="card" id="16">
+              <div class="card-body">
+                <img src="img/C++.png" alt="">
+                <h6>C++</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 skill-header">
+            <div class="card" id="17">
+              <div class="card-body">
+                <img src="img/C.png" alt="">
+                <h6>C</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-sm-3 skill-header">
+            <div class="card" id="18">
+              <div class="card-body">
+                <img src="img/html.svg" alt="">
+                <h6>HTML</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 skill-header">
+            <div class="card" id="19">
+              <div class="card-body">
+                <img src="img/CSS.webp" alt="">
+                <h6>CSS</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-sm-3 skill-header">
+            <div class="card" id="20">
+              <div class="card-body">
+                <img src="img/SASS.png" alt="">
+                <h6>SASS</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 skill-header">
+            <div class="card" id="21">
+              <div class="card-body">
+                <img src="img/Javascript.png" alt="">
+                <h6>Javascript</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- awal skill -->
+
+    <!-- Achievements -->
+    <section class="achievements" id="achievements">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2>My Achievements</h2>
+            <hr />
+          </div>
+        </div>
+        </div>
+        <div class="row justify-content-around max-achievements">
+          <div class="col-sm-3 mb-3 headercard" id="lomba1">
+            <div class="card" data-aos="fade-up-right" style="transition: all .5s;">
+              <!-- <img class="card-img-top" src="img/Juara 3 Imilkom Competitive Programming.jpg" alt="Project1" /> -->
+              <div class="card-body">
+                <p class="card-text">
+                  Honorable Mentioned of Imilkom Competitive Programming Competition
+                  </p>
+                  <div class="lomba">
+                    <div class="container">
+                      <img src="img/Juara 3 Imilkom Competitive Programming.jpg" alt="">
+                      <div class="note">
+                        Won the 3rd position (honorable mentioned) in IMILKOM Competitive Programming
+                        Competition held by IMILKOM using C++ language and participated by students from
+                        various universities in Indonesia.   
+                      </div>               
+                    <br>
+                      <a href="#achievements">Return</a>
+                    </div>
+                  </div>
+                  <button>
+                    <a href="#lomba1">Details</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          <div class="col-sm-3 mb-3 headercard" id="lomba2">
+            <br><br><br>
+            <div class="card" data-aos="fade-up-right" data-aos-delay="400" style="transition: all .5s;">
+              <!-- <img class="card-img-top" src="img/Juara 3 Mini Tech.jpg" alt="Project2" /> -->
+              <div class="card-body">
+                <p class="card-text">
+                    3rd Winner of Mini-Tech Competitive Programming Competition
+                </p>
+                <div class="lomba">
+                  <div class="container">
+                    <img src="img/Juara 3 Mini Tech.jpg" alt="">
+                    <div class="note">
+                      Won the 3rd position in Competitive Programming Competition on MINI-TECH
+                      Competition held by PEMA Fasilkom-TI using C++ language and participated by students of
+                      University of North Sumatera.  
+                    </div>
+                    <a href="#achievements">Return</a>
+                  </div>
+                </div>
+                <button>
+                  <a href="#lomba2">Details</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 mb-3 headercard" id="lomba3">
+            <br><br><br><br><br><br>
+            <div class="card" data-aos="fade-up-right" data-aos-delay="800" style="transition: all .5s;">
+              <!-- <img class="card-img-top" src="img/Juara Olimpiade Fisika.jpeg" alt="Project2" /> -->
+              <div class="card-body">
+                <p class="card-text">
+                    Silver Medalist Physics Olympiad Throughout North Sumatera and Aceh.
+                </p>
+                <div class="lomba">
+                  <div class="container">
+                    <img src="img/Juara Olimpiade Fisika.jpeg" alt="">
+                    <div class="note">
+                      Won the 6th place (silver medalist) on physics olymipad throughout North Sumatera and Aceh held by Lospi.
+                    </div>
+                      <a href="#achievements">Return</a>
+                  </div>
+                </div>
+                <button>
+                  <a href="#lomba3">Details</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ends of achievements -->
+
+    <!-- projects -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2>My Projects</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-left instruction">
+            <h6><b>⇩ Hover the project card to see the details ⇩</b></h6>
+          </div>
+        </div>
+        <!-- laptop -->
+        <div class="row justify-content-center laptop-projects ">
+          <div class="col-sm-3 project-header">
+            <div class="card" data-aos="fade-down">
+              <div class="card-body">
+              <h5>Course Website</h5>
+                  <div class="project-details">
+                    <hr>
+                    <p class="card-text">Remake Pintara Website and give some updated features</p>
+                    <a href="https://bertosamples.github.io/" target="_blank">see the project</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 project-header">
+            <br><br><br>
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+                <h5>Asix Website</h5>
+                  <div class="project-details">
+                    <hr>
+                    <p class="card-text">Built my class (named asix) website using HTML, CSS, Bootsrap, and Javascript.</p>
+                    <a href="https://drive.google.com/drive/folders/1DMyrzVvC1LOqaPAyVIxZdVxnvsSGvBeC" target="_blank">see the project</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 project-header">
+            <br><br><br><br><br><br>
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
+              <div class="card-body">
+                <h5>RPS Game Website</h5>
+                  <div class="project-details">
+                    <hr>
+                    <p class="card-text">Made a RPS (Rock Paper Scissors) game website using HTML, CSS, and Javascript.</p>
+                    <a href="https://github.com/johanesashn/Rock-Paper-Scissors" target="_blank">see the project</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 project-header">
+            <br><br><br><br><br><br><br><br><br>
+            <div class="card" data-aos="fade-up" data-aos-delay="600">
+              <div class="card-body">
+                <h5>My Class Database</h5>
+                  <div class="project-details">
+                    <hr>
+                    <p class="card-text">Built my class database using CRUD method in Python containing my friends' datas.</p>
+                    <a href="https://github.com/johanesashn/My-Class-DATABSE" target="_blank">see the project</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of laptop -->
+
+        <!-- tablet -->
+        <div class="row justify-content-center tab-projects ">
+          <div class="row">
+            <div class="col-sm-3 project-header">
+              <br><br><br>
+              <div class="card" data-aos="fade-up">
+                <div class="card-body">
+                <h5>Course Website</h5>
+                    <div class="project-details">
+                      <hr>
+                      <p class="card-text">Remake Pintara Website and give some updated features</p>
+                      <a href="https://bertosamples.github.io/" target="_blank">see the project</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-sm-3 project-header">
+              <br><br><br>
+              <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-body">
+                  <h5>Asix Website</h5>
+                    <div class="project-details">
+                      <hr>
+                      <p class="card-text">Built my class (named asix) website using HTML, CSS, Bootsrap, and Javascript.</p>
+                      <a href="https://drive.google.com/drive/folders/1DMyrzVvC1LOqaPAyVIxZdVxnvsSGvBeC" target="_blank">see the project</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 project-header">
+              <br><br><br>
+              <div class="card" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-body">
+                  <h5>RPS Game Website</h5>
+                    <div class="project-details">
+                      <hr>
+                      <p class="card-text">Made a RPS (Rock Paper Scissors) game website using HTML, CSS, and Javascript.</p>
+                      <a href="https://github.com/johanesashn/Rock-Paper-Scissors" target="_blank">see the project</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 project-header">
+              <br><br><br>
+              <div class="card" data-aos="fade-up" data-aos-delay="600">
+                <div class="card-body">
+                  <h5>My Class Database</h5>
+                    <div class="project-details">
+                      <hr>
+                      <p class="card-text">Built my class database using CRUD method in Python containing my friends' datas.</p>
+                      <a href="https://github.com/johanesashn/My-Class-DATABSE" target="_blank">see the project</a>
+                    </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- phone -->
+        <div class="row justify-content-center phone-projects ">
+          <div class="row">
+            <div class="col-sm-3 project-header">
+              <br><br><br>
+              <div class="card" data-aos="fade-up">
+                <div class="card-body">
+                  <h5>Course Website</h5>
+                      <div class="project-details">
+                        <hr>
+                        <p class="card-text">Remake Pintara Website and give some updated features</p>
+                        <a href="https://bertosamples.github.io/" target="_blank">see the project</a>
+                      </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-3 project-header">
+                <br><br><br>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card-body">
+                    <h5>Asix Website</h5>
+                      <div class="project-details">
+                        <hr>
+                        <p class="card-text">Built my class (named asix) website using HTML, CSS, Bootsrap, and Javascript.</p>
+                        <a href="https://drive.google.com/drive/folders/1DMyrzVvC1LOqaPAyVIxZdVxnvsSGvBeC" target="_blank">see the project</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-3 project-header">
+                <br><br><br>
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card-body">
+                    <h5>RPS Game Website</h5>
+                      <div class="project-details">
+                        <hr>
+                        <p class="card-text">Made a RPS (Rock Paper Scissors) game website using HTML, CSS, and Javascript.</p>
+                        <a href="https://github.com/johanesashn/Rock-Paper-Scissors" target="_blank">see the project</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-3 project-header">
+                <br><br><br>
+                <div class="card" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card-body">
+                    <h5>My Class Database</h5>
+                      <div class="project-details">
+                        <hr>
+                        <p class="card-text">Built my class database using CRUD method in Python containing my friends' datas.</p>
+                        <a href="https://github.com/johanesashn/My-Class-DATABSE" target="_blank">see the project</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir projects -->
+    
+    <div class="contact-me" id="contact">
+      <div class="row justify-content-center">
+        <div class="head">
+          <h2 >Contact Me</h2>
+          <hr>
+        </div>
+        <div class="picture">
+          <a href="mailto:johanesashn@gmail.com">
+            <img data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" src="img/gmail.png" alt="">
+          </a>
+        </div>
+        <button data-aos="fade-in" data-aos-delay="300"><a href="mailto:johanesashn@gmail.com"><h6>email me</h6></a></button>
+      </div>
+    </div>
+  
+    <!-- footer -->
+    <footer class="text-center pb-3">
+      <p>Created with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+      </svg> by <a href="https://instagram.com/johanesalberto" target="_blank">Johanes Alberto Siahaan</a></p>
+    </footer>
+    <!-- akhir footer -->
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+
+        const navUl = document.querySelectorAll('nav ul li');
+        navUl.forEach((li, i) => {
+          li.dataset.aos = "flip-down";
+          li.dataset.aosDelay = (500 + i*100);
+          li.dataset.aosDuration = 1000;
+        })
+
+        const SkillBigCard = document.querySelectorAll('.skills .skills-fill .skill-header');
+        SkillBigCard.forEach((skill, i) => {
+          skill.dataset.aos = "fade-left";
+          skill.dataset.aosDelay = i*100;
+          skill.dataset.aosDuration = 300;
+        })
+
+        const SkillTabCard = document.querySelectorAll('.skills .skills-fill-tab .skill-header');
+        SkillTabCard.forEach((skill, i) => {
+          skill.dataset.aos = "fade-left";
+          skill.dataset.aosDelay = i*100;
+          skill.dataset.aosDuration = 300;
+        })
+
+        const SkillPhoneCard = document.querySelectorAll('.skills .skills-fill-phone .skill-header');
+        SkillPhoneCard.forEach((skill, i) => {
+          skill.dataset.aos = "fade-left";
+          skill.dataset.aosDelay = i*100;
+          skill.dataset.aosDuration = 300;
+        })
+        AOS.init();
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.jumbotron h6', {duration : 1.5, delay : 1, text : 'A Computer Science Student'})
+      gsap.to('.jumbotron .right-phone .top', {duration : .5, delay : 1, text : 'HI !!!'})
+      gsap.to('.jumbotron .right-phone .below', {duration : 1, delay : 1.5, text : "I'M JOHANES"})
+      gsap.to('.jumbotron .right-phone h6', {duration : .5, delay : 2, text : "A Computer Science Student"})
+    </script>   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- myscript -->
+    <script src="script.js"></script>
+  </body>
+</html>
